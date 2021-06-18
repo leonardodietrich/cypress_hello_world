@@ -2,6 +2,15 @@
   "viewportWidth": 1024,
   "viewportHeight": 768,
   "defaultCommandTimeout": 10000,
-  "baseUrl": "https://www.saucedemo.com/"
-}
+  "baseUrl": "https://www.saucedemo.com/",
 
+  "video": false,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "mochawesome-report",
+    "reportFilename": "index.html",
+    "overwrite": false,
+    "hmtl": true,
+    "json": false
+  }
+}
