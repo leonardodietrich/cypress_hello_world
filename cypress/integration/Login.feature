@@ -1,6 +1,8 @@
-Feature: Login site Swag Labs
+#language: pt
 
-Scenario: Validar exibição do botão de login
-	Given acesso o site Swag Labs
-	Then acesso a pagina de login
-	When devo visualizar o botão de login
+Funcionalidade: Login site Swag Labs
+
+Cenario: Validando exibição do botão de login
+	Dado que acesso o site Swag Labs
+	Quando acesso a pagina de login
+	Entao devo visualizar o botão de login

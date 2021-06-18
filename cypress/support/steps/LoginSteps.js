@@ -3,7 +3,7 @@
 import LoginPage from '../pageobjects/LoginPage'
 const loginPage = new LoginPage
 
-Given("acesso o site Swag Labs", () => {
+Given("que acesso o site Swag Labs", () => {
     loginPage.acessarSite();
 })
 

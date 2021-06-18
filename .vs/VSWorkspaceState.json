@@ -3,5 +3,6 @@
     "",
     "\\cypress"
   ],
+  "SelectedNode": "\\cypress\\support",
   "PreviewInSolutionExplorer": false
 }
