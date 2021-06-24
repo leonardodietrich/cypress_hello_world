@@ -5,14 +5,33 @@ const loginElements = new LoginElements
 const url = Cypress.config("baseUrl")
 
 class LoginPage {
-    // Acessa o site que será testado
     acessarSite() {
         cy.visit(url)
     }
 
-    // Verifica se o botão tem o texto "Login"
     visualizarBotaoLogin() {
-        cy.get(loginElements.botaoLogin()).should('contain', 'Login')
+        cy.get(loginElements.botaoLogin())
+        .should('contain', 'Login')
+    }
+
+    visualizarMensagemDeErro() {
+        cy.get(loginElements.mensagemDeErro())
+        .should('contain', 'Epic sadface: Sorry, this user has been locked out.')
+    }
+
+    informarUsuario(username){
+        cy.get(loginElements.inputUsername())
+        .type(username)
+    }
+    
+    informarSenha(password){
+        cy.get(loginElements.inputPassword())
+        .type(password)
+    }
+
+    clicarBotaoLogin(){
+        cy.get(loginElements.botaoLogin())
+        .click()
     }
 }
 
